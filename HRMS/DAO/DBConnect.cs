@@ -11,7 +11,7 @@ namespace HRMS.DAO
     class DBConnect
     {
      
-        public SqlConnection _conn = new SqlConnection("Data Source=LAPTOP-CIHRN6M5;Initial" +
+        protected SqlConnection _conn = new SqlConnection("Data Source=LAPTOP-2EQI5L4R\\MSSQLSERVER01;Initial" +
             " Catalog=QLNhanSu;Integrated Security=True");
      
     }

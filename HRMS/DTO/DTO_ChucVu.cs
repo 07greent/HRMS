@@ -10,6 +10,14 @@ namespace HRMS.DTO
     {
         private string _CtChucVu_MaCV;
         private string _CtChucVu_TenCV;
+        private string maCV;
+        private string tenCV;
+
+        public DTO_ChucVu(string maCV, string tenCV)
+        {
+            this.maCV = maCV;
+            this.tenCV = tenCV;
+        }
 
         public string CtChucVu_MaCV
         {

@@ -43,7 +43,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel1.BackColor = System.Drawing.Color.LavenderBlush;
             this.panel1.Controls.Add(this.radioButton7);
             this.panel1.Controls.Add(this.radioButton6);
             this.panel1.Controls.Add(this.rdNCPNN);
@@ -55,7 +55,7 @@
             this.panel1.Location = new System.Drawing.Point(6, 48);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(399, 572);
+            this.panel1.Size = new System.Drawing.Size(538, 572);
             this.panel1.TabIndex = 2;
             // 
             // radioButton7
@@ -162,18 +162,18 @@
             // 
             // pnLoad
             // 
-            this.pnLoad.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.pnLoad.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnLoad.Location = new System.Drawing.Point(466, 0);
+            this.pnLoad.BackColor = System.Drawing.Color.Lavender;
+            this.pnLoad.Location = new System.Drawing.Point(552, 26);
             this.pnLoad.Margin = new System.Windows.Forms.Padding(4);
             this.pnLoad.Name = "pnLoad";
-            this.pnLoad.Size = new System.Drawing.Size(711, 845);
+            this.pnLoad.Size = new System.Drawing.Size(593, 794);
             this.pnLoad.TabIndex = 3;
             // 
             // CC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LavenderBlush;
             this.ClientSize = new System.Drawing.Size(1177, 845);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnLoad);
