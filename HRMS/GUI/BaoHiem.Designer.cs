@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtSo = new System.Windows.Forms.TextBox();
             this.txtTen = new System.Windows.Forms.TextBox();
             this.txtNoiCap = new System.Windows.Forms.TextBox();
@@ -40,23 +42,23 @@
             this.lbTB = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btThem = new System.Windows.Forms.Button();
-            this.NgayHetHan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LoaiBaoHiem = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btXoa = new System.Windows.Forms.Button();
-            this.btSua = new System.Windows.Forms.Button();
-            this.btLuu = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtSo
             // 
-            this.txtSo.Location = new System.Drawing.Point(870, 152);
+            this.txtSo.Location = new System.Drawing.Point(786, 108);
             this.txtSo.Margin = new System.Windows.Forms.Padding(4);
             this.txtSo.Name = "txtSo";
             this.txtSo.Size = new System.Drawing.Size(267, 22);
@@ -64,18 +66,18 @@
             // 
             // txtTen
             // 
-            this.txtTen.Location = new System.Drawing.Point(164, 152);
+            this.txtTen.Location = new System.Drawing.Point(198, 108);
             this.txtTen.Margin = new System.Windows.Forms.Padding(4);
             this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(201, 22);
+            this.txtTen.Size = new System.Drawing.Size(334, 22);
             this.txtTen.TabIndex = 24;
             // 
             // txtNoiCap
             // 
-            this.txtNoiCap.Location = new System.Drawing.Point(618, 201);
+            this.txtNoiCap.Location = new System.Drawing.Point(786, 150);
             this.txtNoiCap.Margin = new System.Windows.Forms.Padding(4);
             this.txtNoiCap.Name = "txtNoiCap";
-            this.txtNoiCap.Size = new System.Drawing.Size(519, 22);
+            this.txtNoiCap.Size = new System.Drawing.Size(354, 22);
             this.txtNoiCap.TabIndex = 23;
             // 
             // cbLoai
@@ -84,7 +86,7 @@
             this.cbLoai.Items.AddRange(new object[] {
             "Bảo Hiểm Thân Thể",
             "Bảo Hiểm Y Tế"});
-            this.cbLoai.Location = new System.Drawing.Point(484, 152);
+            this.cbLoai.Location = new System.Drawing.Point(198, 155);
             this.cbLoai.Margin = new System.Windows.Forms.Padding(4);
             this.cbLoai.Name = "cbLoai";
             this.cbLoai.Size = new System.Drawing.Size(211, 24);
@@ -93,7 +95,7 @@
             // dtpNgayHH
             // 
             this.dtpNgayHH.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpNgayHH.Location = new System.Drawing.Point(384, 201);
+            this.dtpNgayHH.Location = new System.Drawing.Point(510, 206);
             this.dtpNgayHH.Margin = new System.Windows.Forms.Padding(4);
             this.dtpNgayHH.Name = "dtpNgayHH";
             this.dtpNgayHH.Size = new System.Drawing.Size(129, 22);
@@ -102,7 +104,7 @@
             // dtpNgayCap
             // 
             this.dtpNgayCap.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpNgayCap.Location = new System.Drawing.Point(131, 201);
+            this.dtpNgayCap.Location = new System.Drawing.Point(198, 206);
             this.dtpNgayCap.Margin = new System.Windows.Forms.Padding(4);
             this.dtpNgayCap.Name = "dtpNgayCap";
             this.dtpNgayCap.Size = new System.Drawing.Size(135, 22);
@@ -111,7 +113,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(538, 208);
+            this.label4.Location = new System.Drawing.Point(661, 150);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 17);
@@ -121,7 +123,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(276, 208);
+            this.label7.Location = new System.Drawing.Point(391, 211);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(97, 17);
@@ -131,7 +133,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(51, 208);
+            this.label6.Location = new System.Drawing.Point(101, 206);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(70, 17);
@@ -152,7 +154,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(375, 155);
+            this.label5.Location = new System.Drawing.Point(71, 155);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(100, 17);
@@ -162,63 +164,17 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(51, 155);
+            this.label2.Location = new System.Drawing.Point(68, 105);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(103, 17);
             this.label2.TabIndex = 14;
             this.label2.Text = "Tên Nhân Viên";
             // 
-            // btThem
-            // 
-            this.btThem.Location = new System.Drawing.Point(678, 250);
-            this.btThem.Margin = new System.Windows.Forms.Padding(4);
-            this.btThem.Name = "btThem";
-            this.btThem.Size = new System.Drawing.Size(100, 28);
-            this.btThem.TabIndex = 10;
-            this.btThem.Text = "Thêm";
-            this.btThem.UseVisualStyleBackColor = true;
-            // 
-            // NgayHetHan
-            // 
-            this.NgayHetHan.DataPropertyName = "NgayHetHan";
-            this.NgayHetHan.HeaderText = "Ngày Hết Hạn";
-            this.NgayHetHan.MinimumWidth = 6;
-            this.NgayHetHan.Name = "NgayHetHan";
-            this.NgayHetHan.ReadOnly = true;
-            this.NgayHetHan.Width = 150;
-            // 
-            // LoaiBaoHiem
-            // 
-            this.LoaiBaoHiem.DataPropertyName = "LoaiBaoHiem";
-            this.LoaiBaoHiem.HeaderText = "Loại Bảo Hiểm";
-            this.LoaiBaoHiem.MinimumWidth = 6;
-            this.LoaiBaoHiem.Name = "LoaiBaoHiem";
-            this.LoaiBaoHiem.ReadOnly = true;
-            this.LoaiBaoHiem.Width = 250;
-            // 
-            // TenNV
-            // 
-            this.TenNV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.TenNV.DataPropertyName = "TenNV";
-            this.TenNV.HeaderText = "Tên Nhân Viên";
-            this.TenNV.MinimumWidth = 6;
-            this.TenNV.Name = "TenNV";
-            this.TenNV.ReadOnly = true;
-            // 
-            // MaNhanVien
-            // 
-            this.MaNhanVien.DataPropertyName = "MaNhanVien";
-            this.MaNhanVien.HeaderText = "Mã Nhân Viên";
-            this.MaNhanVien.MinimumWidth = 6;
-            this.MaNhanVien.Name = "MaNhanVien";
-            this.MaNhanVien.ReadOnly = true;
-            this.MaNhanVien.Width = 125;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(716, 155);
+            this.label3.Location = new System.Drawing.Point(577, 108);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(142, 17);
@@ -229,66 +185,170 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(400, 57);
+            this.label1.Location = new System.Drawing.Point(407, 19);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(354, 39);
             this.label1.TabIndex = 12;
             this.label1.Text = "Bảo Hiểm Nhân Viên";
             // 
-            // btXoa
+            // bunifuCustomDataGrid1
             // 
-            this.btXoa.Location = new System.Drawing.Point(1038, 250);
-            this.btXoa.Margin = new System.Windows.Forms.Padding(4);
-            this.btXoa.Name = "btXoa";
-            this.btXoa.Size = new System.Drawing.Size(100, 28);
-            this.btXoa.TabIndex = 9;
-            this.btXoa.Text = "Xóa";
-            this.btXoa.UseVisualStyleBackColor = true;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.bunifuCustomDataGrid1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.CadetBlue;
+            this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Salmon;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.bunifuCustomDataGrid1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5});
+            this.bunifuCustomDataGrid1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.bunifuCustomDataGrid1.DoubleBuffered = true;
+            this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
+            this.bunifuCustomDataGrid1.GridColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.Salmon;
+            this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.Black;
+            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(0, 276);
+            this.bunifuCustomDataGrid1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
+            this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.bunifuCustomDataGrid1.RowHeadersWidth = 51;
+            this.bunifuCustomDataGrid1.RowTemplate.Height = 24;
+            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(1177, 569);
+            this.bunifuCustomDataGrid1.TabIndex = 26;
             // 
-            // btSua
+            // Column1
             // 
-            this.btSua.Location = new System.Drawing.Point(924, 250);
-            this.btSua.Margin = new System.Windows.Forms.Padding(4);
-            this.btSua.Name = "btSua";
-            this.btSua.Size = new System.Drawing.Size(100, 28);
-            this.btSua.TabIndex = 8;
-            this.btSua.Text = "Sửa";
-            this.btSua.UseVisualStyleBackColor = true;
+            this.Column1.HeaderText = "Column1";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
             // 
-            // btLuu
+            // Column2
             // 
-            this.btLuu.Location = new System.Drawing.Point(802, 250);
-            this.btLuu.Margin = new System.Windows.Forms.Padding(4);
-            this.btLuu.Name = "btLuu";
-            this.btLuu.Size = new System.Drawing.Size(100, 28);
-            this.btLuu.TabIndex = 11;
-            this.btLuu.Text = "Lưu";
-            this.btLuu.UseVisualStyleBackColor = true;
+            this.Column2.HeaderText = "Column2";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
             // 
-            // dataGridView1
+            // Column3
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaNhanVien,
-            this.TenNV,
-            this.LoaiBaoHiem,
-            this.NgayHetHan});
-            this.dataGridView1.Location = new System.Drawing.Point(29, 325);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1155, 282);
-            this.dataGridView1.TabIndex = 7;
+            this.Column3.HeaderText = "Column3";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Column4";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Column5";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            // 
+            // iconButton3
+            // 
+            this.iconButton3.AllowDrop = true;
+            this.iconButton3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.iconButton3.AutoSize = true;
+            this.iconButton3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.iconButton3.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
+            this.iconButton3.FlatAppearance.BorderSize = 2;
+            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.iconButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton3.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Trash;
+            this.iconButton3.IconColor = System.Drawing.Color.Black;
+            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton3.IconSize = 30;
+            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton3.Location = new System.Drawing.Point(992, 211);
+            this.iconButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton3.Name = "iconButton3";
+            this.iconButton3.Size = new System.Drawing.Size(148, 49);
+            this.iconButton3.TabIndex = 29;
+            this.iconButton3.Text = "Xóa";
+            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton3.UseVisualStyleBackColor = false;
+            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
+            // 
+            // iconButton2
+            // 
+            this.iconButton2.AllowDrop = true;
+            this.iconButton2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.iconButton2.AutoSize = true;
+            this.iconButton2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.iconButton2.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
+            this.iconButton2.FlatAppearance.BorderSize = 2;
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.iconButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton2.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Copy;
+            this.iconButton2.IconColor = System.Drawing.Color.Black;
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton2.IconSize = 30;
+            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton2.Location = new System.Drawing.Point(846, 211);
+            this.iconButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Size = new System.Drawing.Size(140, 49);
+            this.iconButton2.TabIndex = 28;
+            this.iconButton2.Text = "Sửa";
+            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton2.UseVisualStyleBackColor = false;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.AllowDrop = true;
+            this.iconButton1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.iconButton1.AutoSize = true;
+            this.iconButton1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
+            this.iconButton1.FlatAppearance.BorderSize = 2;
+            this.iconButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.iconButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.iconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
+            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Plus;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton1.IconSize = 30;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.Location = new System.Drawing.Point(702, 211);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(138, 49);
+            this.iconButton1.TabIndex = 27;
+            this.iconButton1.Text = "Thêm";
+            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton1.UseVisualStyleBackColor = false;
             // 
             // BaoHiem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1197, 643);
+            this.BackColor = System.Drawing.Color.LavenderBlush;
+            this.ClientSize = new System.Drawing.Size(1177, 845);
+            this.Controls.Add(this.iconButton3);
+            this.Controls.Add(this.iconButton2);
+            this.Controls.Add(this.iconButton1);
+            this.Controls.Add(this.bunifuCustomDataGrid1);
             this.Controls.Add(this.txtSo);
             this.Controls.Add(this.txtTen);
             this.Controls.Add(this.txtNoiCap);
@@ -301,17 +361,12 @@
             this.Controls.Add(this.lbTB);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.btThem);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btXoa);
-            this.Controls.Add(this.btSua);
-            this.Controls.Add(this.btLuu);
-            this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BaoHiem";
             this.Text = "BaoHiem";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -331,16 +386,16 @@
         private System.Windows.Forms.Label lbTB;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btThem;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NgayHetHan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn LoaiBaoHiem;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenNV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaNhanVien;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btXoa;
-        private System.Windows.Forms.Button btSua;
-        private System.Windows.Forms.Button btLuu;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private FontAwesome.Sharp.IconButton iconButton3;
+        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }

@@ -20,8 +20,8 @@ namespace HRMS.GUI
 
         public void NhanVien_Load(object sender, EventArgs e)
         {
-            //dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            //dataGridView1.DataSource = busNV.getNhanVien();
+            bunifuCustomDataGrid1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            bunifuCustomDataGrid1.DataSource = busNV.getNhanVien();
         }
 
         private void iconButton2_Click(object sender, EventArgs e)
@@ -35,6 +35,16 @@ namespace HRMS.GUI
         }
 
         private void iconButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuCustomDataGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void bunifuGradientPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

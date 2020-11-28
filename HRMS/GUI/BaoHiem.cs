@@ -16,5 +16,10 @@ namespace HRMS.GUI
         {
             InitializeComponent();
         }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

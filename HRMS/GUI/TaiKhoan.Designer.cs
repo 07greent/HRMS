@@ -82,7 +82,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackColor = System.Drawing.Color.PowderBlue;
             this.panel1.Location = new System.Drawing.Point(24, 211);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1126, 611);
