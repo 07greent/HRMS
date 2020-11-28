@@ -16,15 +16,8 @@ namespace HRMS.DAO
         {
             try
             {
-                MessageBox.Show("vao ham get");
-                if (_conn.State != ConnectionState.Open)
-                {
-                    _conn.Open(); 
-                    MessageBox.Show("Vao duoc");
-
-                }
-                else
-                    MessageBox.Show("kh duoc");
+              
+         
                 SqlDataAdapter da = new SqlDataAdapter("select * from nhanvien", _conn);
                 DataTable dt = new DataTable();
                 da.Fill(dt);

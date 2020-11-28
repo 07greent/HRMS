@@ -11,7 +11,7 @@ namespace HRMS.DAO
 {
     class DAOPhongBan : DBConnect
     {
-        public DataTable getPhongBan()
+        public DataTable Get()
         {
             SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM PhongBan", _conn);
             DataTable data = new DataTable();
