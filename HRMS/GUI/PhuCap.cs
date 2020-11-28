@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HRMS.GUI
 {
-    public partial class CaiDat : Form
+    public partial class PhuCap : Form
     {
-        public CaiDat()
+        public PhuCap()
         {
             InitializeComponent();
         }

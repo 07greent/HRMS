@@ -17,6 +17,8 @@ namespace HRMS
         public Form2()
         {
             InitializeComponent();
+            TrangChu tc = new TrangChu();
+            OpenFormInpanel(tc);
         }
         private void btnMinimize_Click(object sender, EventArgs e)
         {
@@ -42,7 +44,8 @@ namespace HRMS
      
         private void iconButton1_Click(object sender, EventArgs e)
         {
-           
+            TrangChu tc = new TrangChu();
+            OpenFormInpanel(tc);
         }
         private void iconButton3_Click(object sender, EventArgs e)
         {
@@ -52,7 +55,7 @@ namespace HRMS
 
         private void iconButton5_Click(object sender, EventArgs e)
         {
-            CaiDat cd = new CaiDat();
+            CC cd = new CC();
             OpenFormInpanel(cd);
         }
 
@@ -78,6 +81,30 @@ namespace HRMS
         {
             Luong luong = new Luong();
             OpenFormInpanel(luong);
+        }
+
+        private void iconButton6_Click(object sender, EventArgs e)
+        {
+            PhuCap phucap = new PhuCap();
+            OpenFormInpanel(phucap);
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            BaoHiem baohiem = new BaoHiem();
+            OpenFormInpanel(baohiem);
+        }
+
+        private void bunifuTileButton1_Click(object sender, EventArgs e)
+        {
+            AboutUs au = new AboutUs();
+            OpenFormInpanel(au);
+        }
+
+        private void iconButton8_Click(object sender, EventArgs e)
+        {
+            TaiKhoan tk = new TaiKhoan();
+            OpenFormInpanel(tk);
         }
     }
 }

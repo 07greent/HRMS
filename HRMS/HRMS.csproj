@@ -86,11 +86,65 @@
     <Compile Include="DTO\DTO_PhongBan.cs" />
     <Compile Include="DTO\DTO_PhuCap.cs" />
     <Compile Include="DTO\DTO_TaiKhoan.cs" />
-    <Compile Include="GUI\CaiDat.cs">
+    <Compile Include="GUI\AboutUs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\CaiDat.Designer.cs">
-      <DependentUpon>CaiDat.cs</DependentUpon>
+    <Compile Include="GUI\AboutUs.Designer.cs">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\BaoHiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\BaoHiem.Designer.cs">
+      <DependentUpon>BaoHiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\CC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\CC.Designer.cs">
+      <DependentUpon>CC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ChamCong\tkNVNghiTrongNgay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ChamCong\tkNVNghiTrongNgay.Designer.cs">
+      <DependentUpon>tkNVNghiTrongNgay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ChamCong\tkNVNghiCoPhep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ChamCong\tkNVNghiCoPhep.Designer.cs">
+      <DependentUpon>tkNVNghiCoPhep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ChamCong\tkSoNgayDiLam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ChamCong\tkSoNgayDiLam.Designer.cs">
+      <DependentUpon>tkSoNgayDiLam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ChamCong\tkSoNgayNghiCoPhep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ChamCong\tkSoNgayNghiCoPhep.Designer.cs">
+      <DependentUpon>tkSoNgayNghiCoPhep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ChamCong\tkSoNgayNghiKhongPhep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ChamCong\tkSoNgayNghiKhongPhep.Designer.cs">
+      <DependentUpon>tkSoNgayNghiKhongPhep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ChamCong\tkXemccTheoPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ChamCong\tkXemccTheoPhong.Designer.cs">
+      <DependentUpon>tkXemccTheoPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ChamCong\tkXemccTheoTen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ChamCong\tkXemccTheoTen.Designer.cs">
+      <DependentUpon>tkXemccTheoTen.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\LoginForm.cs">
       <SubType>Form</SubType>
@@ -122,10 +176,67 @@
     <Compile Include="GUI\PhongBan.Designer.cs">
       <DependentUpon>PhongBan.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\PhuCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\PhuCap.Designer.cs">
+      <DependentUpon>PhuCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\TaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\TaiKhoan.Designer.cs">
+      <DependentUpon>TaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\TK\DoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\TK\DoiMatKhau.Designer.cs">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\TK\DoiThongTin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\TK\DoiThongTin.Designer.cs">
+      <DependentUpon>DoiThongTin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\TrangChu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\TrangChu.Designer.cs">
+      <DependentUpon>TrangChu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GUI\CaiDat.resx">
-      <DependentUpon>CaiDat.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\AboutUs.resx">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\BaoHiem.resx">
+      <DependentUpon>BaoHiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\CC.resx">
+      <DependentUpon>CC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ChamCong\tkNVNghiTrongNgay.resx">
+      <DependentUpon>tkNVNghiTrongNgay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ChamCong\tkNVNghiCoPhep.resx">
+      <DependentUpon>tkNVNghiCoPhep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ChamCong\tkSoNgayDiLam.resx">
+      <DependentUpon>tkSoNgayDiLam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ChamCong\tkSoNgayNghiCoPhep.resx">
+      <DependentUpon>tkSoNgayNghiCoPhep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ChamCong\tkSoNgayNghiKhongPhep.resx">
+      <DependentUpon>tkSoNgayNghiKhongPhep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ChamCong\tkXemccTheoPhong.resx">
+      <DependentUpon>tkXemccTheoPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ChamCong\tkXemccTheoTen.resx">
+      <DependentUpon>tkXemccTheoTen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -141,6 +252,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\PhongBan.resx">
       <DependentUpon>PhongBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\PhuCap.resx">
+      <DependentUpon>PhuCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\TaiKhoan.resx">
+      <DependentUpon>TaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\TK\DoiMatKhau.resx">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\TK\DoiThongTin.resx">
+      <DependentUpon>DoiThongTin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\TrangChu.resx">
+      <DependentUpon>TrangChu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
