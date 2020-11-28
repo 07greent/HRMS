@@ -16,6 +16,7 @@ namespace HRMS.DAO
         {
             try
             {
+
                 MessageBox.Show("vao ham get");
                 if (_conn.State != ConnectionState.Open)
                 {
@@ -25,6 +26,9 @@ namespace HRMS.DAO
                 }
                 else
                     MessageBox.Show("kh duoc");
+
+              //  MessageBox.Show("vao ham get");
+
                 SqlDataAdapter da = new SqlDataAdapter("select * from nhanvien", _conn);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
@@ -55,7 +59,6 @@ namespace HRMS.DAO
             }
         }
 
-
         public DataTable Get(List<string> listProperties)
         {
             try
@@ -80,8 +83,10 @@ namespace HRMS.DAO
             }
         }
 
+
         public DataTable Get(List<string> listProperties, string condition)
         {
+
             try
             {
                 string sql = "select " + listProperties[0];
@@ -104,8 +109,6 @@ namespace HRMS.DAO
                 return null;
             }
         }
-
-     
 
         public DataTable TraCuuNV(string maNV, string maPB)
         {
@@ -256,6 +259,31 @@ namespace HRMS.DAO
 
             return false;
         }
+
+        public bool Delete(string MaNV)
+        {
+            try
+            {
+                _conn.Open();
+                SqlCommand cmd = new SqlCommand("Delete", _conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@MaNhanVien", MaNV);
+                if (cmd.ExecuteNonQuery() > 0)
+                {
+                    return true;
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+            finally
+            {
+                _conn.Close();
+            }
+            return false;
+        }
+
     }
 }
 

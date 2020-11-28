@@ -13,6 +13,23 @@ namespace HRMS.DTO
         private int _HopDong_HeSoLuong;
         private string _HopDong_MaCV;
         private string _HopDong_MaPB;
+//<<<<<<< HEAD
+//=======
+//        private string maHD;
+//        private DateTime ngayVaoLam;
+//        private int hesoLuong;
+//        private string maCV;
+//        private string maPB;
+
+//        public DTO_HopDong(string maHD, DateTime ngayVaoLam, int hesoLuong, string maCV, string maPB)
+//        {
+//            this.maHD = maHD;
+//            this.ngayVaoLam = ngayVaoLam;
+//            this.hesoLuong = hesoLuong;
+//            this.maCV = maCV;
+//            this.maPB = maPB;
+//        }
+//>>>>>>> 387e7c3c752ee2f441329f5a971169d9ab7f2e9f
 
         public string HopDong_MaHD
         {
@@ -25,7 +42,9 @@ namespace HRMS.DTO
                 _HopDong_MaHD = value;
             }
         }
-        public DateTime ong_NgayVaoLam
+
+        public DateTime HopDong_NgayVaoLam
+
         {
             get
             {

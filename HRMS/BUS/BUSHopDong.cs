@@ -11,6 +11,7 @@ namespace HRMS.BUS
 {
     class BUSHopDong
     {
+<<<<<<< HEAD
         //DAOHopDong daoHopDong = new DAOHopDong();
         // public DataTable getHopDong()
         //{
@@ -41,5 +42,37 @@ namespace HRMS.BUS
         //{
         //    return daoHopDong.CtHopDong(maHD);
         //}
+=======
+        DAOHopDong daoHopDong = new DAOHopDong();
+         public DataTable getHopDong()
+        {
+            return daoHopDong.Get();
+        }
+
+        public DataTable getHopDong(string condition)
+        {
+            return daoHopDong.Get(condition);
+        }
+
+        public DataTable getHopDong(List<string> listProperties)
+        {
+            return daoHopDong.Get(listProperties);
+        }
+
+        public DataTable getHopDong(List<string> listProperties, string condition)
+        {
+            return daoHopDong.Get(listProperties, condition);
+        }
+
+        public bool ThemHopDong(string maHD,DateTime ngayVaoLam, int hesoLuong,string maCV,string maPB)
+        {
+            DTO_HopDong dtoHopDong = new DTO_HopDong(maHD,ngayVaoLam,hesoLuong,maCV,maPB);
+            return daoHopDong.ThemHD(dtoHopDong);
+        }
+        public DataTable CTHD(string maHD, DateTime ngayVaoLam, int hesoLuong, string maCV, string maPB)
+        {
+            return daoHopDong.CtHopDong(maHD);
+        }
+>>>>>>> 387e7c3c752ee2f441329f5a971169d9ab7f2e9f
     }
 }

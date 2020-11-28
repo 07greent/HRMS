@@ -10,8 +10,11 @@ namespace HRMS.DTO
     {
         private string _PhongBan_MaPB;
         private string _PhongBan_TenPB;
+//<<<<<<< HEAD
+//=======
+     private string tenPB;
 
-        /* Get/Set */
+
         public string PhongBan_MaPB
         {
             get
@@ -35,8 +38,15 @@ namespace HRMS.DTO
             }
         }
         /* Constructor */
-        public DTO_PhongBan()
+
+        public DTO_PhongBan(string maPB)
         {
         }
+
+        public DTO_PhongBan(string maPB, string tenPB) : this(maPB)
+        {
+            this.tenPB = tenPB;
+        }
+
     }
 }

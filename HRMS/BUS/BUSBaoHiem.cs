@@ -12,6 +12,7 @@ namespace HRMS.BUS
     class BUSBaoHiem
     {
         DAOBaoHiem daoBaoHiem = new DAOBaoHiem();
+<<<<<<< HEAD
         //public DataTable getBaoHiem()
         //{
         //    return daoBaoHiem.Get();
@@ -35,5 +36,40 @@ namespace HRMS.BUS
         {
             return daoBaoHiem.CtBaoHiem(maNV);
         }    
+=======
+        public DataTable getBaoHiem()
+        {
+            return daoBaoHiem.Get();
+        }
+
+        public DataTable getBaoHiem(string condition)
+        {
+            return daoBaoHiem.Get(condition);
+        }
+
+        public DataTable getBaoHiem(List<string> listProperties)
+        {
+            return daoBaoHiem.Get(listProperties);
+        }
+
+        public DataTable getBaoHiem(List<string> listProperties, string condition)
+        {
+            return daoBaoHiem.Get(listProperties, condition);
+        }
+        public DataTable CTBH(string maNV)
+        {
+            return daoBaoHiem.CtBaoHiem(maNV);
+        }
+        public bool ThemBH(string maNV,string loaiBH,string soThe,DateTime NgayCap,DateTime ngayHetHan,string NoiCap)
+        {
+            DTO_BaoHiem dtoBaoHiem = new DTO_BaoHiem(maNV,loaiBH,soThe,NgayCap,ngayHetHan,NoiCap);
+            return daoBaoHiem.themBaoHiem(dtoBaoHiem);
+        }
+        public bool SuaBH(string maNV, string loaiBH, string soThe, DateTime NgayCap, DateTime ngayHetHan, string NoiCap)
+        {
+            DTO_BaoHiem dtoBaoHiem = new DTO_BaoHiem(maNV, loaiBH, soThe, NgayCap, ngayHetHan, NoiCap);
+            return daoBaoHiem.suaBaoHiem(dtoBaoHiem);
+        }
+>>>>>>> 387e7c3c752ee2f441329f5a971169d9ab7f2e9f
     }
 }

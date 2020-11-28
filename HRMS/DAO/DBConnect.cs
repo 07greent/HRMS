@@ -10,9 +10,7 @@ namespace HRMS.DAO
 {
     class DBConnect
     {
-     
-        protected SqlConnection _conn = new SqlConnection("Data Source=LAPTOP-2EQI5L4R\\MSSQLSERVER01;Initial" +
+        public SqlConnection _conn = new SqlConnection("Data Source=LAPTOP-1OD02N22\\SQLEXPRESS;Initial" +
             " Catalog=QLNhanSu;Integrated Security=True");
-     
     }
 }

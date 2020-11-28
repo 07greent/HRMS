@@ -52,7 +52,9 @@
             this.panel1.Controls.Add(this.btnMinimize);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(449, 43);
             this.panel1.TabIndex = 0;
@@ -60,10 +62,12 @@
             // btnClose
             // 
             this.btnClose.Image = global::HRMS.Properties.Resources.cerrar;
+
             this.btnClose.Location = new System.Drawing.Point(412, 7);
             this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(29, 30);
+
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnClose.TabIndex = 5;
             this.btnClose.TabStop = false;
@@ -72,10 +76,12 @@
             // btnMinimize
             // 
             this.btnMinimize.Image = global::HRMS.Properties.Resources.minimazar;
+
             this.btnMinimize.Location = new System.Drawing.Point(373, 7);
             this.btnMinimize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(29, 30);
+
             this.btnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMinimize.TabIndex = 4;
             this.btnMinimize.TabStop = false;
@@ -86,14 +92,18 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(65)))), ((int)(((byte)(85)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 472);
+
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(449, 10);
             this.panel2.TabIndex = 1;
             // 
             // bunifuMaterialTextbox1
             // 
+
             this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+
             this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.DarkKhaki;
             this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
@@ -103,17 +113,21 @@
             this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.SandyBrown;
             this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.SteelBlue;
             this.bunifuMaterialTextbox1.LineThickness = 3;
+
             this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(111, 206);
             this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+
             this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
             this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(221, 58);
             this.bunifuMaterialTextbox1.TabIndex = 2;
             this.bunifuMaterialTextbox1.Text = "Username";
             this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+
             // 
             // bunifuMaterialTextbox2
             // 
             this.bunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+
             this.bunifuMaterialTextbox2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.DarkKhaki;
             this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.Black;
@@ -123,13 +137,16 @@
             this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.SandyBrown;
             this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.SteelBlue;
             this.bunifuMaterialTextbox2.LineThickness = 3;
+
             this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(109, 273);
             this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+
             this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
             this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(221, 52);
             this.bunifuMaterialTextbox2.TabIndex = 3;
             this.bunifuMaterialTextbox2.Text = "Password";
             this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+
             // 
             // checkboxRemember
             // 
@@ -137,8 +154,10 @@
             this.checkboxRemember.BackColor = System.Drawing.Color.Transparent;
             this.checkboxRemember.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkboxRemember.ForeColor = System.Drawing.Color.DarkKhaki;
+
             this.checkboxRemember.Location = new System.Drawing.Point(109, 338);
             this.checkboxRemember.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
             this.checkboxRemember.Name = "checkboxRemember";
             this.checkboxRemember.Size = new System.Drawing.Size(141, 24);
             this.checkboxRemember.TabIndex = 4;
@@ -151,7 +170,9 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox1.Image = global::HRMS.Properties.Resources.marca;
             this.pictureBox1.Location = new System.Drawing.Point(0, 43);
+
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(449, 158);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -177,7 +198,9 @@
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.DarkKhaki;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.DarkOliveGreen;
             this.bunifuThinButton21.Location = new System.Drawing.Point(121, 361);
+
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(204, 65);
             this.bunifuThinButton21.TabIndex = 5;
@@ -210,9 +233,11 @@
             this.Controls.Add(this.bunifuMaterialTextbox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

@@ -34,10 +34,30 @@ namespace HRMS.BUS
             return daoNhanVien.Get(listProperties, condition);
         }
 
-        public bool insertNhanVien(string maNV, string maPB,string maHD,int hesoLuong, string hoTen, string gioiTinh, DateTime ngaySinh,string soCM,string sDT,string trinhdoHV,string diaChi,string email,string ttHonNhan)
+//<<<<<<< HEAD
+//        public bool insertNhanVien(string maNV, string maPB,string maHD,int hesoLuong, string hoTen, string gioiTinh, DateTime ngaySinh,string soCM,string sDT,string trinhdoHV,string diaChi,string email,string ttHonNhan)
+//        {
+//            DTO_NhanVien dTO_DocGia = new DTO_NhanVien( maNV,  maPB,  maHD,  hesoLuong,  hoTen,  gioiTinh, ngaySinh,  soCM, sDT,  trinhdoHV,  diaChi,  email,  ttHonNhan);   
+//            return daoNhanVien.Add(dTO_DocGia);
+//=======
+        public bool ThemNV(string maNV, string maPB,string maHD,int hesoLuong, string hoTen, string gioiTinh, DateTime ngaySinh,string soCM,string sDT,string trinhdoHV,string diaChi,string email,string ttHonNhan)
         {
-            DTO_NhanVien dTO_DocGia = new DTO_NhanVien( maNV,  maPB,  maHD,  hesoLuong,  hoTen,  gioiTinh, ngaySinh,  soCM, sDT,  trinhdoHV,  diaChi,  email,  ttHonNhan);   
-            return daoNhanVien.Add(dTO_DocGia);
+            DTO_NhanVien dtoNhanVien = new DTO_NhanVien( maNV,  maPB,  maHD,  hesoLuong,  hoTen,  gioiTinh, ngaySinh,  soCM, sDT,  trinhdoHV,  diaChi,  email,  ttHonNhan);   
+            return daoNhanVien.Add(dtoNhanVien);
+        }
+        public bool Sua(string maNV, string maPB, string maHD, int hesoLuong, string hoTen, string gioiTinh, DateTime ngaySinh, string soCM, string sDT, string trinhdoHV, string diaChi, string email, string ttHonNhan)
+        {
+            DTO_NhanVien dtoNhanVien = new DTO_NhanVien(maNV, maPB, maHD, hesoLuong, hoTen, gioiTinh, ngaySinh, soCM, sDT, trinhdoHV, diaChi, email, ttHonNhan);
+            return daoNhanVien.SuaNV(dtoNhanVien);
+        }
+        public bool XoaNV(string MaNV)
+        {
+            return daoNhanVien.Delete(MaNV);
+        }
+        public DataTable TraCuu(string maNV,string maPB)
+        {
+            return daoNhanVien.TraCuuNV(maNV, maPB);
+
         }
     }
 }
