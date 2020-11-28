@@ -1,0 +1,94 @@
+D:\DOAN LAPTRINHTRUCQUAN\HRMS\HRMS\bin\Debug\HRMS.exe.config
+D:\DOAN LAPTRINHTRUCQUAN\HRMS\HRMS\bin\Debug\HRMS.exe
+D:\DOAN LAPTRINHTRUCQUAN\HRMS\HRMS\bin\Debug\HRMS.pdb
+D:\DOAN LAPTRINHTRUCQUAN\HRMS\HRMS\obj\Debug\HRMS.csprojAssemblyReference.cache
+D:\DOAN LAPTRINHTRUCQUAN\HRMS\HRMS\obj\Debug\HRMS.Form1.resources
+D:\DOAN LAPTRINHTRUCQUAN\HRMS\HRMS\obj\Debug\HRMS.Properties.Resources.resources
+D:\DOAN LAPTRINHTRUCQUAN\HRMS\HRMS\obj\Debug\HRMS.csproj.GenerateResource.cache
+D:\DOAN LAPTRINHTRUCQUAN\HRMS\HRMS\obj\Debug\HRMS.csproj.CoreCompileInputs.cache
+D:\DOAN LAPTRINHTRUCQUAN\HRMS\HRMS\obj\Debug\HRMS.csproj.CopyComplete
+D:\DOAN LAPTRINHTRUCQUAN\HRMS\HRMS\obj\Debug\HRMS.exe
+D:\DOAN LAPTRINHTRUCQUAN\HRMS\HRMS\obj\Debug\HRMS.pdb
+D:\DOAN LAPTRINHTRUCQUAN\HRMS\HRMS\bin\Debug\Bunifu_UI_v1.52.dll
+D:\DOAN LAPTRINHTRUCQUAN\HRMS\HRMS\bin\Debug\Animator.dll
+D:\DOAN LAPTRINHTRUCQUAN\HRMS\HRMS\obj\Debug\HRMS.Form2.resources
+D:\DOAN LAPTRINHTRUCQUAN\HRMS\HRMS\bin\Debug\MetroFramework.Design.dll
+D:\DOAN LAPTRINHTRUCQUAN\HRMS\HRMS\bin\Debug\MetroFramework.dll
+D:\DOAN LAPTRINHTRUCQUAN\HRMS\HRMS\bin\Debug\MetroFramework.Fonts.dll
+D:\DOAN LAPTRINHTRUCQUAN\HRMS\HRMS\bin\Debug\FontAwesome.Sharp.dll
+D:\DOAN LAPTRINHTRUCQUAN\HRMS\HRMS\obj\Debug\HRMS.GUI.TrangChuForm.resources
+C:\Users\ASUS\Downloads\HRMS\HRMS\bin\Debug\HRMS.exe.config
+C:\Users\ASUS\Downloads\HRMS\HRMS\bin\Debug\HRMS.exe
+C:\Users\ASUS\Downloads\HRMS\HRMS\bin\Debug\HRMS.pdb
+C:\Users\ASUS\Downloads\HRMS\HRMS\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\ASUS\Downloads\HRMS\HRMS\bin\Debug\MetroFramework.Design.dll
+C:\Users\ASUS\Downloads\HRMS\HRMS\bin\Debug\MetroFramework.dll
+C:\Users\ASUS\Downloads\HRMS\HRMS\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\ASUS\Downloads\HRMS\HRMS\obj\Debug\HRMS.csprojAssemblyReference.cache
+C:\Users\ASUS\Downloads\HRMS\HRMS\obj\Debug\HRMS.Form1.resources
+C:\Users\ASUS\Downloads\HRMS\HRMS\obj\Debug\HRMS.Form2.resources
+C:\Users\ASUS\Downloads\HRMS\HRMS\obj\Debug\HRMS.Properties.Resources.resources
+C:\Users\ASUS\Downloads\HRMS\HRMS\obj\Debug\HRMS.csproj.GenerateResource.cache
+C:\Users\ASUS\Downloads\HRMS\HRMS\obj\Debug\HRMS.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Downloads\HRMS\HRMS\obj\Debug\HRMS.csproj.CopyComplete
+C:\Users\ASUS\Downloads\HRMS\HRMS\obj\Debug\HRMS.exe
+C:\Users\ASUS\Downloads\HRMS\HRMS\obj\Debug\HRMS.pdb
+C:\Users\My Hp\OneDrive\Desktop\đồ án lttq\HRMS (1)\HRMS\HRMS\obj\Debug\HRMS.csprojAssemblyReference.cache
+C:\Users\My Hp\OneDrive\Desktop\đồ án lttq\HRMS (1)\HRMS\HRMS\obj\Debug\HRMS.Form1.resources
+C:\Users\My Hp\OneDrive\Desktop\đồ án lttq\HRMS (1)\HRMS\HRMS\obj\Debug\HRMS.Form2.resources
+C:\Users\My Hp\OneDrive\Desktop\đồ án lttq\HRMS (1)\HRMS\HRMS\obj\Debug\HRMS.Properties.Resources.resources
+C:\Users\My Hp\OneDrive\Desktop\đồ án lttq\HRMS (1)\HRMS\HRMS\obj\Debug\HRMS.csproj.GenerateResource.cache
+C:\Users\My Hp\OneDrive\Desktop\đồ án lttq\HRMS (1)\HRMS\HRMS\obj\Debug\HRMS.csproj.CoreCompileInputs.cache
+C:\Users\My Hp\OneDrive\Desktop\đồ án lttq\HRMS (1)\HRMS\HRMS\obj\Debug\HRMS.exe
+C:\Users\My Hp\OneDrive\Desktop\đồ án lttq\HRMS (1)\HRMS\HRMS\obj\Debug\HRMS.pdb
+C:\Users\My Hp\OneDrive\Desktop\đồ án lttq\HRMS\HRMS\bin\Debug\HRMS.exe.config
+C:\Users\My Hp\OneDrive\Desktop\đồ án lttq\HRMS\HRMS\bin\Debug\HRMS.exe
+C:\Users\My Hp\OneDrive\Desktop\đồ án lttq\HRMS\HRMS\bin\Debug\HRMS.pdb
+C:\Users\My Hp\OneDrive\Desktop\đồ án lttq\HRMS\HRMS\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\My Hp\OneDrive\Desktop\đồ án lttq\HRMS\HRMS\bin\Debug\MetroFramework.Design.dll
+C:\Users\My Hp\OneDrive\Desktop\đồ án lttq\HRMS\HRMS\bin\Debug\MetroFramework.dll
+C:\Users\My Hp\OneDrive\Desktop\đồ án lttq\HRMS\HRMS\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\My Hp\OneDrive\Desktop\đồ án lttq\HRMS\HRMS\obj\Debug\HRMS.csprojAssemblyReference.cache
+C:\Users\My Hp\OneDrive\Desktop\đồ án lttq\HRMS\HRMS\obj\Debug\HRMS.Form1.resources
+C:\Users\My Hp\OneDrive\Desktop\đồ án lttq\HRMS\HRMS\obj\Debug\HRMS.Form2.resources
+C:\Users\My Hp\OneDrive\Desktop\đồ án lttq\HRMS\HRMS\obj\Debug\HRMS.Properties.Resources.resources
+C:\Users\My Hp\OneDrive\Desktop\đồ án lttq\HRMS\HRMS\obj\Debug\HRMS.csproj.GenerateResource.cache
+C:\Users\My Hp\OneDrive\Desktop\đồ án lttq\HRMS\HRMS\obj\Debug\HRMS.csproj.CoreCompileInputs.cache
+C:\Users\My Hp\OneDrive\Desktop\đồ án lttq\HRMS\HRMS\obj\Debug\HRMS.csproj.CopyComplete
+C:\Users\My Hp\OneDrive\Desktop\đồ án lttq\HRMS\HRMS\obj\Debug\HRMS.exe
+C:\Users\My Hp\OneDrive\Desktop\đồ án lttq\HRMS\HRMS\obj\Debug\HRMS.pdb
+C:\Users\ACER\Desktop\HRMS\HRMS\bin\Debug\HRMS.exe.config
+C:\Users\ACER\Desktop\HRMS\HRMS\bin\Debug\HRMS.exe
+C:\Users\ACER\Desktop\HRMS\HRMS\bin\Debug\HRMS.pdb
+C:\Users\ACER\Desktop\HRMS\HRMS\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\ACER\Desktop\HRMS\HRMS\bin\Debug\MetroFramework.Design.dll
+C:\Users\ACER\Desktop\HRMS\HRMS\bin\Debug\MetroFramework.dll
+C:\Users\ACER\Desktop\HRMS\HRMS\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\ACER\Desktop\HRMS\HRMS\obj\Debug\HRMS.csprojAssemblyReference.cache
+C:\Users\ACER\Desktop\HRMS\HRMS\obj\Debug\HRMS.Form1.resources
+C:\Users\ACER\Desktop\HRMS\HRMS\obj\Debug\HRMS.Form2.resources
+C:\Users\ACER\Desktop\HRMS\HRMS\obj\Debug\HRMS.Properties.Resources.resources
+C:\Users\ACER\Desktop\HRMS\HRMS\obj\Debug\HRMS.csproj.GenerateResource.cache
+C:\Users\ACER\Desktop\HRMS\HRMS\obj\Debug\HRMS.csproj.CoreCompileInputs.cache
+C:\Users\ACER\Desktop\HRMS\HRMS\obj\Debug\HRMS.csproj.CopyComplete
+C:\Users\ACER\Desktop\HRMS\HRMS\obj\Debug\HRMS.exe
+C:\Users\ACER\Desktop\HRMS\HRMS\obj\Debug\HRMS.pdb
+C:\Users\ACER\Desktop\HRMS\HRMS\obj\Debug\HRMS.GUI.NhanVien.resources
+C:\Users\ACER\Desktop\HRMS\HRMS\bin\Debug\Guna.UI.dll
+C:\Users\ACER\Desktop\HRMS\HRMS\obj\Debug\HRMS.GUI.Luong.resources
+C:\Users\ACER\Desktop\HRMS\HRMS\obj\Debug\HRMS.GUI.PhongBan.resources
+C:\Users\ACER\Desktop\HRMS\HRMS\obj\Debug\HRMS.GUI.ChamCong.tkNVNghiTrongNgay.resources
+C:\Users\ACER\Desktop\HRMS\HRMS\obj\Debug\HRMS.GUI.ChamCong.tkNVNghiCoPhep.resources
+C:\Users\ACER\Desktop\HRMS\HRMS\obj\Debug\HRMS.GUI.ChamCong.tkSoNgayDiLam.resources
+C:\Users\ACER\Desktop\HRMS\HRMS\obj\Debug\HRMS.GUI.ChamCong.tkSoNgayNghiCoPhep.resources
+C:\Users\ACER\Desktop\HRMS\HRMS\obj\Debug\HRMS.GUI.ChamCong.tkSoNgayNghiKhongPhep.resources
+C:\Users\ACER\Desktop\HRMS\HRMS\obj\Debug\HRMS.GUI.ChamCong.tkXemccTheoPhong.resources
+C:\Users\ACER\Desktop\HRMS\HRMS\obj\Debug\HRMS.GUI.ChamCong.tkXemccTheoTen.resources
+C:\Users\ACER\Desktop\HRMS\HRMS\obj\Debug\HRMS.GUI.CC.resources
+C:\Users\ACER\Desktop\HRMS\HRMS\obj\Debug\HRMS.GUI.PhuCap.resources
+C:\Users\ACER\Desktop\HRMS\HRMS\obj\Debug\HRMS.GUI.BaoHiem.resources
+C:\Users\ACER\Desktop\HRMS\HRMS\obj\Debug\HRMS.GUI.AboutUs.resources
+C:\Users\ACER\Desktop\HRMS\HRMS\obj\Debug\HRMS.GUI.TaiKhoan.resources
+C:\Users\ACER\Desktop\HRMS\HRMS\obj\Debug\HRMS.GUI.TK.DoiThongTin.resources
+C:\Users\ACER\Desktop\HRMS\HRMS\obj\Debug\HRMS.GUI.TrangChu.resources
+C:\Users\ACER\Desktop\HRMS\HRMS\obj\Debug\HRMS.GUI.TK.DoiMatKhau.resources
