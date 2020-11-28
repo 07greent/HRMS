@@ -48,5 +48,9 @@ namespace HRMS.BUS
         {
             return daoNhanVien.Delete(MaNV);
         }
+        public DataTable TraCuu(string maNV,string maPB)
+        {
+            return daoNhanVien.TraCuuNV(maNV, maPB);
+        }
     }
 }

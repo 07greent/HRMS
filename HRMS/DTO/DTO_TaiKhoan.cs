@@ -13,6 +13,14 @@ namespace HRMS.DTO
         private string _TaiKhoan_MatKhau;
         private string _TaiKhoan_TenQuyenHan;
 
+        public DTO_TaiKhoan(string tK, string mK)
+        {
+        }
+
+        public DTO_TaiKhoan(string tK, string mK, string mK1, string quyenHan) : this(tK, mK)
+        {
+        }
+
         public string TaiKhoan_MaNhanVien
         {
             get

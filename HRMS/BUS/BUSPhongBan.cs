@@ -36,6 +36,11 @@ namespace HRMS.BUS
             DTO_PhongBan dtoPhongBan = new DTO_PhongBan(maPB, tenPB);
             return daoPhongBan.AddPB(dtoPhongBan);
         }
+        public bool SuaPB(string maPB, string tenPB)
+        {
+            DTO_PhongBan dtoPhongBan = new DTO_PhongBan(maPB, tenPB);
+            return daoPhongBan.SuaPB(dtoPhongBan);
+        }
         public bool XoaPB(string maPB)
         {
             return daoPhongBan.DeletePB(maPB);

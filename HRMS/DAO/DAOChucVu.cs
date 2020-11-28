@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using HRMS.DTO;
-
+using System.Diagnostics.Eventing.Reader;
 
 namespace HRMS.DAO
 {
@@ -163,6 +163,29 @@ namespace HRMS.DAO
             catch (Exception)
             {
                 return false;
+            }
+            finally
+            {
+                _conn.Close();
+            }
+            return false;
+        }
+        public bool xoaChucVu(string maCV)
+        {
+            try
+            {
+                _conn.Open();
+                SqlCommand cmd = new SqlCommand("Delete", _conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@MaNhanVien", maCV);
+                if (cmd.ExecuteNonQuery() > 0)
+                {
+                    return true;
+                }
+            }
+            catch (Exception)
+            {
+
             }
             finally
             {

@@ -44,7 +44,10 @@ namespace HRMS.BUS
             DTO_ChucVu dtoChucVu = new DTO_ChucVu(maCV, tenCV);
             return daoChucVu.themChucVu(dtoChucVu);
         }
-
+        public bool XoaCV(string maCV)
+        {
+            return daoChucVu.xoaChucVu(maCV);
+        }
         public DataTable CTCV(string MaCV)
         {
             return daoChucVu.CtChucVu(MaCV);

@@ -119,6 +119,33 @@ namespace HRMS.DAO
             }
             return false;
         }
+        public bool SuaPB(DTO_PhongBan pb)
+        {
+            try
+            {
+                _conn.Open();
+
+                SqlCommand cmd = new SqlCommand("SuaPB", _conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter parameter;
+
+                parameter = new SqlParameter("@MaPB", pb.PhongBan_MaPB);
+                cmd.Parameters.Add(parameter);
+
+                parameter = new SqlParameter("@TenPB", pb.PhongBan_TenPB);
+                cmd.Parameters.Add(parameter);
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+            finally
+            {
+                _conn.Close();
+            }
+            return false;
+        }
         public bool DeletePB(string MaPB)
         {
             try

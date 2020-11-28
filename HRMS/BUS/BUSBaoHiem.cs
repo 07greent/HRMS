@@ -34,6 +34,16 @@ namespace HRMS.BUS
         public DataTable CTBH(string maNV)
         {
             return daoBaoHiem.CtBaoHiem(maNV);
-        }    
+        }
+        public bool ThemBH(string maNV,string loaiBH,string soThe,DateTime NgayCap,DateTime ngayHetHan,string NoiCap)
+        {
+            DTO_BaoHiem dtoBaoHiem = new DTO_BaoHiem(maNV,loaiBH,soThe,NgayCap,ngayHetHan,NoiCap);
+            return daoBaoHiem.themBaoHiem(dtoBaoHiem);
+        }
+        public bool SuaBH(string maNV, string loaiBH, string soThe, DateTime NgayCap, DateTime ngayHetHan, string NoiCap)
+        {
+            DTO_BaoHiem dtoBaoHiem = new DTO_BaoHiem(maNV, loaiBH, soThe, NgayCap, ngayHetHan, NoiCap);
+            return daoBaoHiem.suaBaoHiem(dtoBaoHiem);
+        }
     }
 }

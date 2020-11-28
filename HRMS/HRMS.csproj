@@ -70,6 +70,7 @@
     <Compile Include="BUS\BUSHopDong.cs" />
     <Compile Include="BUS\BUSNhanVien.cs" />
     <Compile Include="BUS\BUSPhongBan.cs" />
+    <Compile Include="BUS\BUSTaiKhoan.cs" />
     <Compile Include="DAO\DAOBaoHiem.cs" />
     <Compile Include="DAO\DAOChucVu.cs" />
     <Compile Include="DAO\DAOHopDong.cs" />

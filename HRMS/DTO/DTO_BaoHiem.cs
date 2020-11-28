@@ -15,6 +15,14 @@ namespace HRMS.DTO
         private DateTime _BaoHiem_NgayHetHan;
         private string _BaoHiem_NoiCap;
 
+        public DTO_BaoHiem(string maNV, string loaiBH, string soThe, DateTime ngayCap, DateTime ngayHetHan, string noiCap)
+        {
+        }
+
+        public DTO_BaoHiem(string maNV, string maPB, object maHD, object hesoLuong, object hoTen, object gioiTinh, object ngaySinh, string soCM, string sDT, string trinhdoHV, string diaChi, string email, string ttHonNhan)
+        {
+        }
+
         public string BaoHiem_MaNhanVien
         {
             get
