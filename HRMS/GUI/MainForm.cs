@@ -30,10 +30,7 @@ namespace HRMS
         }
         public void OpenFormInpanel(Form Formmini)
         {
-            while (this.panel2.Controls.Count > 0)
-            {
-                this.panel2.Controls.RemoveAt(0);
-            }
+            this.panel2.Controls.Clear();
             Form fm = Formmini as Form;
             fm.TopLevel = false;
             fm.Dock = DockStyle.Fill;

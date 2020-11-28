@@ -177,6 +177,7 @@
             this.ClientSize = new System.Drawing.Size(1177, 845);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnLoad);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CC";
             this.Text = "CC";

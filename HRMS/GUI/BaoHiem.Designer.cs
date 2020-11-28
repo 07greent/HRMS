@@ -308,6 +308,7 @@
             this.Controls.Add(this.btSua);
             this.Controls.Add(this.btLuu);
             this.Controls.Add(this.dataGridView1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BaoHiem";
             this.Text = "BaoHiem";

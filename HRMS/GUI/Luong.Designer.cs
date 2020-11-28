@@ -51,10 +51,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtLuong = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.txtLuong = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -298,6 +298,33 @@
             this.panel1.Size = new System.Drawing.Size(1273, 530);
             this.panel1.TabIndex = 10;
             // 
+            // txtLuong
+            // 
+            this.txtLuong.FormattingEnabled = true;
+            this.txtLuong.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.txtLuong.Location = new System.Drawing.Point(202, 137);
+            this.txtLuong.Margin = new System.Windows.Forms.Padding(4);
+            this.txtLuong.Name = "txtLuong";
+            this.txtLuong.Size = new System.Drawing.Size(170, 24);
+            this.txtLuong.TabIndex = 14;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(202, 103);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(117, 22);
+            this.textBox1.TabIndex = 9;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -331,33 +358,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(1209, 353);
             this.dataGridView1.TabIndex = 0;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(202, 103);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(117, 22);
-            this.textBox1.TabIndex = 9;
-            // 
-            // txtLuong
-            // 
-            this.txtLuong.FormattingEnabled = true;
-            this.txtLuong.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.txtLuong.Location = new System.Drawing.Point(202, 137);
-            this.txtLuong.Margin = new System.Windows.Forms.Padding(4);
-            this.txtLuong.Name = "txtLuong";
-            this.txtLuong.Size = new System.Drawing.Size(170, 24);
-            this.txtLuong.TabIndex = 14;
-            // 
             // Luong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -370,6 +370,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.panel1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Luong";
             this.Text = "Luong";

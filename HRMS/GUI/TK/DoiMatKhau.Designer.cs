@@ -30,7 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoiMatKhau));
             this.panel1 = new System.Windows.Forms.Panel();
+
             this.textBox1 = new System.Windows.Forms.TextBox();
+
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -40,6 +42,9 @@
             this.txtMKM = new System.Windows.Forms.TextBox();
             this.txtMKC = new System.Windows.Forms.TextBox();
             this.btnLuu = new System.Windows.Forms.Button();
+
+       //     this.textBox1 = new System.Windows.Forms.TextBox();
+
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -72,6 +77,7 @@
             this.textBox1.Size = new System.Drawing.Size(260, 22);
             this.textBox1.TabIndex = 5;
             // 
+
             // label3
             // 
             this.label3.AutoSize = true;
@@ -165,6 +171,17 @@
             this.btnLuu.Text = "Cập Nhật";
             this.btnLuu.UseVisualStyleBackColor = true;
             // 
+
+            // textBox1
+            // 
+            //this.textBox1.Location = new System.Drawing.Point(226, 73);
+            //this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            //this.textBox1.Name = "textBox1";
+            //this.textBox1.PasswordChar = '*';
+            //this.textBox1.Size = new System.Drawing.Size(260, 22);
+            //this.textBox1.TabIndex = 5;
+            // 
+
             // bunifuGradientPanel1
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));

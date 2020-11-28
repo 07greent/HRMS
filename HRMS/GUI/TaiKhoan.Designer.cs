@@ -95,6 +95,7 @@
             this.ClientSize = new System.Drawing.Size(1177, 845);
             this.Controls.Add(this.iconButton1);
             this.Controls.Add(this.bunifuGradientPanel1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TaiKhoan";
             this.Text = "TaiKhoan";
