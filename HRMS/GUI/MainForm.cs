@@ -47,11 +47,16 @@ namespace HRMS
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+          //  dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             dataGridView1.DataSource = busNV.getNhanVien();
         }
 
         private void iconButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
