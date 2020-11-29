@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using HRMS.DTO;
+using System.Windows.Forms;
 using HRMS.DAO;
 
 namespace HRMS.BUS
@@ -40,10 +41,10 @@ namespace HRMS.BUS
 //            DTO_NhanVien dTO_DocGia = new DTO_NhanVien( maNV,  maPB,  maHD,  hesoLuong,  hoTen,  gioiTinh, ngaySinh,  soCM, sDT,  trinhdoHV,  diaChi,  email,  ttHonNhan);   
 //            return daoNhanVien.Add(dTO_DocGia);
 //=======
-        public bool ThemNV(string maNV, string maPB,string maHD,int hesoLuong, string hoTen, string gioiTinh, DateTime ngaySinh,string soCM,string sDT,string trinhdoHV,string diaChi,string email,string ttHonNhan)
+        public bool ThemNV(DTO_NhanVien nv)
         {
-            DTO_NhanVien dtoNhanVien = new DTO_NhanVien( maNV,  maPB,  maHD,  hesoLuong,  hoTen,  gioiTinh, ngaySinh,  soCM, sDT,  trinhdoHV,  diaChi,  email,  ttHonNhan);   
-            return daoNhanVien.Add(dtoNhanVien);
+            //DTO_NhanVien dtoNhanVien = new DTO_NhanVien( maNV,  maPB,  maHD,  hesoLuong,  hoTen,  gioiTinh, ngaySinh,  soCM, sDT,  trinhdoHV,  diaChi,  email,  ttHonNhan);   
+            return daoNhanVien.Add(nv);
         }
         public bool Sua(string maNV, string maPB, string maHD, int hesoLuong, string hoTen, string gioiTinh, DateTime ngaySinh, string soCM, string sDT, string trinhdoHV, string diaChi, string email, string ttHonNhan)
         {

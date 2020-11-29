@@ -21,35 +21,22 @@ namespace HRMS.DTO
         private string _NhanVien_DiaChi;
         private string _NhanVien_Email;
         private string _NhanVien_TTHonNhan;
-        private string maNV;
-        private string maPB;
-        private string maHD;
-        private int hesoLuong;
-        private string hoTen;
-        private string gioiTinh;
-        private DateTime ngaySinh;
-        private string soCM;
-        private string sDT;
-        private string trinhdoHV;
-        private string diaChi;
-        private string email;
-        private string ttHonNhan;
 
         public DTO_NhanVien(string maNV, string maPB, string maHD, int hesoLuong, string hoTen, string gioiTinh, DateTime ngaySinh, string soCM, string sDT, string trinhdoHV, string diaChi, string email, string ttHonNhan)
         {
-            this.maNV = maNV;
-            this.maPB = maPB;
-            this.maHD = maHD;
-            this.hesoLuong = hesoLuong;
-            this.hoTen = hoTen;
-            this.gioiTinh = gioiTinh;
-            this.ngaySinh = ngaySinh;
-            this.soCM = soCM;
-            this.sDT = sDT;
-            this.trinhdoHV = trinhdoHV;
-            this.diaChi = diaChi;
-            this.email = email;
-            this.ttHonNhan = ttHonNhan;
+            this.NhanVien_MaNhanVien = maNV;
+            this.NhanVien_MaPB = maPB;
+            this.NhanVien_MaHD = maHD;
+            this.NhanVien_HeSoLuong = hesoLuong;
+            this.NhanVien_TenNV = hoTen;
+            this.NhanVien_GioiTinh = gioiTinh;
+            this.NhanVien_NgaySinh = ngaySinh;
+            this.NhanVien_SoCM = soCM;
+            this.NhanVien_DienThoai = sDT;
+            this.NhanVien_TrinhDoHV = trinhdoHV;
+            this.NhanVien_DiaChi = diaChi;
+            this.NhanVien_Email = email;
+            this.NhanVien_TTHonNhan = ttHonNhan;
         }
 
         public string NhanVien_MaNhanVien

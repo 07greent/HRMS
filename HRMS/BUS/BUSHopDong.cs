@@ -11,7 +11,7 @@ namespace HRMS.BUS
 {
     class BUSHopDong
     {
-<<<<<<< HEAD
+//<<<<<<< HEAD
         //DAOHopDong daoHopDong = new DAOHopDong();
         // public DataTable getHopDong()
         //{
@@ -42,7 +42,7 @@ namespace HRMS.BUS
         //{
         //    return daoHopDong.CtHopDong(maHD);
         //}
-=======
+//=======
         DAOHopDong daoHopDong = new DAOHopDong();
          public DataTable getHopDong()
         {
@@ -73,6 +73,6 @@ namespace HRMS.BUS
         {
             return daoHopDong.CtHopDong(maHD);
         }
->>>>>>> 387e7c3c752ee2f441329f5a971169d9ab7f2e9f
+//>>>>>>> 387e7c3c752ee2f441329f5a971169d9ab7f2e9f
     }
 }

@@ -76,6 +76,12 @@ namespace HRMS.DAO
                 return null;
             }
         }
+
+        internal bool ThemHD(DTO_HopDong dtoHopDong)
+        {
+            throw new NotImplementedException();
+        }
+
         public DataTable Get(List<string> listProperties, string condition)
         {
             try

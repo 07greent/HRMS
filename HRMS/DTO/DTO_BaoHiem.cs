@@ -15,6 +15,16 @@ namespace HRMS.DTO
         private DateTime _BaoHiem_NgayHetHan;
         private string _BaoHiem_NoiCap;
 
+        public DTO_BaoHiem(string maNV, string loaiBH, string soThe, DateTime ngayCap, DateTime ngayHetHan, string noiCap)
+        {
+            MaNV = maNV;
+            LoaiBH = loaiBH;
+            SoThe = soThe;
+            NgayCap = ngayCap;
+            NgayHetHan = ngayHetHan;
+            NoiCap = noiCap;
+        }
+
         public string BaoHiem_MaNhanVien
         {
             get
@@ -81,5 +91,12 @@ namespace HRMS.DTO
                 _BaoHiem_NoiCap = value;
             }
         }
+
+        public string MaNV { get; }
+        public string LoaiBH { get; }
+        public string SoThe { get; }
+        public DateTime NgayCap { get; }
+        public DateTime NgayHetHan { get; }
+        public string NoiCap { get; }
     }
 }

@@ -12,6 +12,18 @@ namespace HRMS.DTO
         private string _TaiKhoan_TenDangNhap;
         private string _TaiKhoan_MatKhau;
         private string _TaiKhoan_TenQuyenHan;
+        private string maNV;
+        private string tK;
+        private string mK;
+        private string quyenHan;
+
+        public DTO_TaiKhoan(string maNV, string tK, string mK, string quyenHan)
+        {
+            this.maNV = maNV;
+            this.tK = tK;
+            this.mK = mK;
+            this.quyenHan = quyenHan;
+        }
 
         public string TaiKhoan_MaNhanVien
         {

@@ -11,7 +11,7 @@ namespace HRMS.BUS
 {
     class BUSPhongBan
     {
-<<<<<<< HEAD
+//<<<<<<< HEAD
         //DAOPhongBan daoPhongBan = new DAOPhongBan();
         //public DataTable getPhongBan()
         //{
@@ -41,7 +41,7 @@ namespace HRMS.BUS
         //{
         //    return daoPhongBan.DeletePB(maPB);
         //}
-=======
+//=======
         DAOPhongBan daoPhongBan = new DAOPhongBan();
         public DataTable getPhongBan()
         {
@@ -76,7 +76,7 @@ namespace HRMS.BUS
         {
             return daoPhongBan.DeletePB(maPB);
         }
->>>>>>> 387e7c3c752ee2f441329f5a971169d9ab7f2e9f
+//>>>>>>> 387e7c3c752ee2f441329f5a971169d9ab7f2e9f
         
     }
 }

@@ -41,25 +41,23 @@
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.metroComboBox4 = new MetroFramework.Controls.MetroComboBox();
-            this.metroDateTime2 = new MetroFramework.Controls.MetroDateTime();
-            this.metroComboBox3 = new MetroFramework.Controls.MetroComboBox();
+            this.CbBTDHVan = new MetroFramework.Controls.MetroComboBox();
+            this.CbBHSLuong = new MetroFramework.Controls.MetroComboBox();
             this.bunifuCustomLabel17 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel13 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.metroComboBox2 = new MetroFramework.Controls.MetroComboBox();
-            this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
+            this.CbCMaPB = new MetroFramework.Controls.MetroComboBox();
+            this.CbBChucVu = new MetroFramework.Controls.MetroComboBox();
             this.bunifuCustomLabel16 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel15 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCheckbox2 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.bunifuCheckbox1 = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.bunifuiOSSwitch1 = new Bunifu.Framework.UI.BunifuiOSSwitch();
-            this.bunifuMetroTextbox8 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuMetroTextbox5 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.metroDateTime1 = new MetroFramework.Controls.MetroDateTime();
-            this.bunifuMetroTextbox4 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuMetroTextbox3 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuMetroTextbox2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuMetroTextbox1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.CheckboxNu = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.CheckboxNam = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.SwitchTTHonNhan = new Bunifu.Framework.UI.BunifuiOSSwitch();
+            this.txtMaNV = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtCMND = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.DatetimeNSinh = new MetroFramework.Controls.MetroDateTime();
+            this.txtDienThoai = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtDiachi = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtEmail = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtHoten = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.bunifuCustomLabel14 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel12 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -111,7 +109,7 @@
             this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(197, 69);
-            this.iconButton1.TabIndex = 1;
+            this.iconButton1.TabIndex = 16;
             this.iconButton1.Text = "Thêm";
             this.iconButton1.UseVisualStyleBackColor = false;
             this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
@@ -135,10 +133,9 @@
             this.iconButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Size = new System.Drawing.Size(200, 66);
-            this.iconButton2.TabIndex = 2;
+            this.iconButton2.TabIndex = 17;
             this.iconButton2.Text = "Sửa";
             this.iconButton2.UseVisualStyleBackColor = false;
-            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
             // iconButton3
             // 
@@ -159,10 +156,9 @@
             this.iconButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Size = new System.Drawing.Size(200, 66);
-            this.iconButton3.TabIndex = 3;
+            this.iconButton3.TabIndex = 18;
             this.iconButton3.Text = "Xóa";
             this.iconButton3.UseVisualStyleBackColor = false;
-            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
             // 
             // bunifuCustomDataGrid1
             // 
@@ -195,7 +191,6 @@
             this.bunifuCustomDataGrid1.RowTemplate.Height = 24;
             this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(1177, 278);
             this.bunifuCustomDataGrid1.TabIndex = 4;
-            this.bunifuCustomDataGrid1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid1_CellContentClick);
             // 
             // bunifuCustomLabel1
             // 
@@ -232,7 +227,7 @@
             this.metroTextBox1.MaxLength = 32767;
             this.metroTextBox1.Name = "metroTextBox1";
             this.metroTextBox1.PasswordChar = '\0';
-           
+            this.metroTextBox1.PromptText = "Tên hoặc MNV";
             this.metroTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.metroTextBox1.SelectedText = "";
             this.metroTextBox1.SelectionLength = 0;
@@ -241,7 +236,7 @@
             this.metroTextBox1.ShowButton = true;
             this.metroTextBox1.ShowClearButton = true;
             this.metroTextBox1.Size = new System.Drawing.Size(317, 31);
-            this.metroTextBox1.TabIndex = 6;
+            this.metroTextBox1.TabIndex = 19;
             this.metroTextBox1.UseCustomBackColor = true;
             this.metroTextBox1.UseCustomForeColor = true;
             this.metroTextBox1.UseSelectable = true;
@@ -255,25 +250,23 @@
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.Controls.Add(this.metroComboBox4);
-            this.bunifuGradientPanel1.Controls.Add(this.metroDateTime2);
-            this.bunifuGradientPanel1.Controls.Add(this.metroComboBox3);
+            this.bunifuGradientPanel1.Controls.Add(this.CbBTDHVan);
+            this.bunifuGradientPanel1.Controls.Add(this.CbBHSLuong);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel17);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel13);
-            this.bunifuGradientPanel1.Controls.Add(this.metroComboBox2);
-            this.bunifuGradientPanel1.Controls.Add(this.metroComboBox1);
+            this.bunifuGradientPanel1.Controls.Add(this.CbCMaPB);
+            this.bunifuGradientPanel1.Controls.Add(this.CbBChucVu);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel16);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel15);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuCheckbox2);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuCheckbox1);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuiOSSwitch1);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuMetroTextbox8);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuMetroTextbox5);
-            this.bunifuGradientPanel1.Controls.Add(this.metroDateTime1);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuMetroTextbox4);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuMetroTextbox3);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuMetroTextbox2);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuMetroTextbox1);
+            this.bunifuGradientPanel1.Controls.Add(this.CheckboxNu);
+            this.bunifuGradientPanel1.Controls.Add(this.CheckboxNam);
+            this.bunifuGradientPanel1.Controls.Add(this.SwitchTTHonNhan);
+            this.bunifuGradientPanel1.Controls.Add(this.txtMaNV);
+            this.bunifuGradientPanel1.Controls.Add(this.txtCMND);
+            this.bunifuGradientPanel1.Controls.Add(this.DatetimeNSinh);
+            this.bunifuGradientPanel1.Controls.Add(this.txtDienThoai);
+            this.bunifuGradientPanel1.Controls.Add(this.txtDiachi);
+            this.bunifuGradientPanel1.Controls.Add(this.txtEmail);
+            this.bunifuGradientPanel1.Controls.Add(this.txtHoten);
             this.bunifuGradientPanel1.Controls.Add(this.iconPictureBox1);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel14);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel12);
@@ -300,42 +293,41 @@
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(1177, 844);
             this.bunifuGradientPanel1.TabIndex = 7;
-            this.bunifuGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuGradientPanel1_Paint);
             // 
-            // metroComboBox4
+            // CbBTDHVan
             // 
-            this.metroComboBox4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.metroComboBox4.FontSize = MetroFramework.MetroComboBoxSize.Small;
-            this.metroComboBox4.FormattingEnabled = true;
-            this.metroComboBox4.ItemHeight = 21;
-            this.metroComboBox4.Location = new System.Drawing.Point(975, 212);
-            this.metroComboBox4.Name = "metroComboBox4";
-            this.metroComboBox4.Size = new System.Drawing.Size(171, 27);
-            this.metroComboBox4.TabIndex = 47;
-            this.metroComboBox4.UseSelectable = true;
+            this.CbBTDHVan.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CbBTDHVan.FontSize = MetroFramework.MetroComboBoxSize.Small;
+            this.CbBTDHVan.FormattingEnabled = true;
+            this.CbBTDHVan.ItemHeight = 21;
+            this.CbBTDHVan.Items.AddRange(new object[] {
+            "Cấp 1",
+            "Cấp 2",
+            "Cấp 3",
+            "Cao Đẳng",
+            "Đại Học"});
+            this.CbBTDHVan.Location = new System.Drawing.Point(975, 212);
+            this.CbBTDHVan.Name = "CbBTDHVan";
+            this.CbBTDHVan.Size = new System.Drawing.Size(171, 27);
+            this.CbBTDHVan.TabIndex = 11;
+            this.CbBTDHVan.UseSelectable = true;
             // 
-            // metroDateTime2
+            // CbBHSLuong
             // 
-            this.metroDateTime2.CalendarForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.metroDateTime2.CalendarMonthBackground = System.Drawing.SystemColors.HotTrack;
-            this.metroDateTime2.Location = new System.Drawing.Point(408, 407);
-            this.metroDateTime2.Margin = new System.Windows.Forms.Padding(4);
-            this.metroDateTime2.MinimumSize = new System.Drawing.Size(0, 30);
-            this.metroDateTime2.Name = "metroDateTime2";
-            this.metroDateTime2.Size = new System.Drawing.Size(356, 30);
-            this.metroDateTime2.TabIndex = 46;
-            // 
-            // metroComboBox3
-            // 
-            this.metroComboBox3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.metroComboBox3.FontSize = MetroFramework.MetroComboBoxSize.Small;
-            this.metroComboBox3.FormattingEnabled = true;
-            this.metroComboBox3.ItemHeight = 21;
-            this.metroComboBox3.Location = new System.Drawing.Point(975, 407);
-            this.metroComboBox3.Name = "metroComboBox3";
-            this.metroComboBox3.Size = new System.Drawing.Size(171, 27);
-            this.metroComboBox3.TabIndex = 45;
-            this.metroComboBox3.UseSelectable = true;
+            this.CbBHSLuong.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CbBHSLuong.FontSize = MetroFramework.MetroComboBoxSize.Small;
+            this.CbBHSLuong.FormattingEnabled = true;
+            this.CbBHSLuong.ItemHeight = 21;
+            this.CbBHSLuong.Items.AddRange(new object[] {
+            "500",
+            "1000",
+            "2000",
+            "4000"});
+            this.CbBHSLuong.Location = new System.Drawing.Point(975, 407);
+            this.CbBHSLuong.Name = "CbBHSLuong";
+            this.CbBHSLuong.Size = new System.Drawing.Size(171, 27);
+            this.CbBHSLuong.TabIndex = 15;
+            this.CbBHSLuong.UseSelectable = true;
             // 
             // bunifuCustomLabel17
             // 
@@ -350,42 +342,38 @@
             this.bunifuCustomLabel17.TabIndex = 44;
             this.bunifuCustomLabel17.Text = "Hệ số lương:";
             // 
-            // bunifuCustomLabel13
+            // CbCMaPB
             // 
-            this.bunifuCustomLabel13.AutoSize = true;
-            this.bunifuCustomLabel13.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel13.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.bunifuCustomLabel13.Location = new System.Drawing.Point(205, 403);
-            this.bunifuCustomLabel13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.bunifuCustomLabel13.Name = "bunifuCustomLabel13";
-            this.bunifuCustomLabel13.Size = new System.Drawing.Size(137, 25);
-            this.bunifuCustomLabel13.TabIndex = 43;
-            this.bunifuCustomLabel13.Text = "Ngày vào làm:";
+            this.CbCMaPB.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CbCMaPB.FontSize = MetroFramework.MetroComboBoxSize.Small;
+            this.CbCMaPB.FormattingEnabled = true;
+            this.CbCMaPB.ItemHeight = 21;
+            this.CbCMaPB.Items.AddRange(new object[] {
+            "Ban giám đốc",
+            "Ban kiểm toán",
+            "Ban quản lý",
+            "Ban sản xuất"});
+            this.CbCMaPB.Location = new System.Drawing.Point(975, 310);
+            this.CbCMaPB.Name = "CbCMaPB";
+            this.CbCMaPB.Size = new System.Drawing.Size(171, 27);
+            this.CbCMaPB.TabIndex = 13;
+            this.CbCMaPB.UseSelectable = true;
             // 
-            // metroComboBox2
+            // CbBChucVu
             // 
-            this.metroComboBox2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.metroComboBox2.FontSize = MetroFramework.MetroComboBoxSize.Small;
-            this.metroComboBox2.FormattingEnabled = true;
-            this.metroComboBox2.ItemHeight = 21;
-            this.metroComboBox2.Location = new System.Drawing.Point(975, 310);
-            this.metroComboBox2.Name = "metroComboBox2";
-            this.metroComboBox2.Size = new System.Drawing.Size(171, 27);
-            this.metroComboBox2.TabIndex = 40;
-            this.metroComboBox2.UseSelectable = true;
-            // 
-            // metroComboBox1
-            // 
-            this.metroComboBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.metroComboBox1.FontSize = MetroFramework.MetroComboBoxSize.Small;
-            this.metroComboBox1.FormattingEnabled = true;
-            this.metroComboBox1.ItemHeight = 21;
-            this.metroComboBox1.Location = new System.Drawing.Point(975, 356);
-            this.metroComboBox1.Name = "metroComboBox1";
-            this.metroComboBox1.Size = new System.Drawing.Size(171, 27);
-            this.metroComboBox1.TabIndex = 37;
-            this.metroComboBox1.UseSelectable = true;
+            this.CbBChucVu.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CbBChucVu.FontSize = MetroFramework.MetroComboBoxSize.Small;
+            this.CbBChucVu.FormattingEnabled = true;
+            this.CbBChucVu.ItemHeight = 21;
+            this.CbBChucVu.Items.AddRange(new object[] {
+            "Giám đốc",
+            "Trưởng phòng",
+            "Nhân viên"});
+            this.CbBChucVu.Location = new System.Drawing.Point(975, 356);
+            this.CbBChucVu.Name = "CbBChucVu";
+            this.CbBChucVu.Size = new System.Drawing.Size(171, 27);
+            this.CbBChucVu.TabIndex = 14;
+            this.CbBChucVu.UseSelectable = true;
             // 
             // bunifuCustomLabel16
             // 
@@ -413,171 +401,171 @@
             this.bunifuCustomLabel15.TabIndex = 35;
             this.bunifuCustomLabel15.Text = "Nam";
             // 
-            // bunifuCheckbox2
+            // CheckboxNu
             // 
-            this.bunifuCheckbox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox2.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox2.Checked = false;
-            this.bunifuCheckbox2.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox2.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox2.Location = new System.Drawing.Point(1044, 113);
-            this.bunifuCheckbox2.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuCheckbox2.Name = "bunifuCheckbox2";
-            this.bunifuCheckbox2.Size = new System.Drawing.Size(20, 20);
-            this.bunifuCheckbox2.TabIndex = 34;
+            this.CheckboxNu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CheckboxNu.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CheckboxNu.Checked = false;
+            this.CheckboxNu.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.CheckboxNu.ForeColor = System.Drawing.Color.White;
+            this.CheckboxNu.Location = new System.Drawing.Point(1044, 113);
+            this.CheckboxNu.Margin = new System.Windows.Forms.Padding(5);
+            this.CheckboxNu.Name = "CheckboxNu";
+            this.CheckboxNu.Size = new System.Drawing.Size(20, 20);
+            this.CheckboxNu.TabIndex = 9;
             // 
-            // bunifuCheckbox1
+            // CheckboxNam
             // 
-            this.bunifuCheckbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox1.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox1.Checked = false;
-            this.bunifuCheckbox1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.bunifuCheckbox1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox1.Location = new System.Drawing.Point(917, 113);
-            this.bunifuCheckbox1.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuCheckbox1.Name = "bunifuCheckbox1";
-            this.bunifuCheckbox1.Size = new System.Drawing.Size(20, 20);
-            this.bunifuCheckbox1.TabIndex = 33;
+            this.CheckboxNam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CheckboxNam.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.CheckboxNam.Checked = false;
+            this.CheckboxNam.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.CheckboxNam.ForeColor = System.Drawing.Color.White;
+            this.CheckboxNam.Location = new System.Drawing.Point(917, 113);
+            this.CheckboxNam.Margin = new System.Windows.Forms.Padding(5);
+            this.CheckboxNam.Name = "CheckboxNam";
+            this.CheckboxNam.Size = new System.Drawing.Size(20, 20);
+            this.CheckboxNam.TabIndex = 8;
             // 
-            // bunifuiOSSwitch1
+            // SwitchTTHonNhan
             // 
-            this.bunifuiOSSwitch1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuiOSSwitch1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuiOSSwitch1.BackgroundImage")));
-            this.bunifuiOSSwitch1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuiOSSwitch1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuiOSSwitch1.Location = new System.Drawing.Point(1024, 166);
-            this.bunifuiOSSwitch1.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuiOSSwitch1.Name = "bunifuiOSSwitch1";
-            this.bunifuiOSSwitch1.OffColor = System.Drawing.Color.Gray;
-            this.bunifuiOSSwitch1.OnColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(202)))), ((int)(((byte)(94)))));
-            this.bunifuiOSSwitch1.Size = new System.Drawing.Size(43, 25);
-            this.bunifuiOSSwitch1.TabIndex = 32;
-            this.bunifuiOSSwitch1.Value = true;
+            this.SwitchTTHonNhan.BackColor = System.Drawing.Color.Transparent;
+            this.SwitchTTHonNhan.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SwitchTTHonNhan.BackgroundImage")));
+            this.SwitchTTHonNhan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.SwitchTTHonNhan.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SwitchTTHonNhan.Location = new System.Drawing.Point(1024, 166);
+            this.SwitchTTHonNhan.Margin = new System.Windows.Forms.Padding(5);
+            this.SwitchTTHonNhan.Name = "SwitchTTHonNhan";
+            this.SwitchTTHonNhan.OffColor = System.Drawing.Color.Gray;
+            this.SwitchTTHonNhan.OnColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(202)))), ((int)(((byte)(94)))));
+            this.SwitchTTHonNhan.Size = new System.Drawing.Size(43, 25);
+            this.SwitchTTHonNhan.TabIndex = 10;
+            this.SwitchTTHonNhan.Value = true;
             // 
-            // bunifuMetroTextbox8
+            // txtMaNV
             // 
-            this.bunifuMetroTextbox8.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.bunifuMetroTextbox8.BorderColorFocused = System.Drawing.Color.SlateGray;
-            this.bunifuMetroTextbox8.BorderColorIdle = System.Drawing.Color.White;
-            this.bunifuMetroTextbox8.BorderColorMouseHover = System.Drawing.Color.SlateGray;
-            this.bunifuMetroTextbox8.BorderThickness = 2;
-            this.bunifuMetroTextbox8.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox8.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox8.isPassword = false;
-            this.bunifuMetroTextbox8.Location = new System.Drawing.Point(975, 265);
-            this.bunifuMetroTextbox8.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuMetroTextbox8.Name = "bunifuMetroTextbox8";
-            this.bunifuMetroTextbox8.Size = new System.Drawing.Size(171, 31);
-            this.bunifuMetroTextbox8.TabIndex = 28;
-            this.bunifuMetroTextbox8.Tag = "";
-            this.bunifuMetroTextbox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtMaNV.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtMaNV.BorderColorFocused = System.Drawing.Color.SlateGray;
+            this.txtMaNV.BorderColorIdle = System.Drawing.Color.White;
+            this.txtMaNV.BorderColorMouseHover = System.Drawing.Color.SlateGray;
+            this.txtMaNV.BorderThickness = 2;
+            this.txtMaNV.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMaNV.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtMaNV.isPassword = false;
+            this.txtMaNV.Location = new System.Drawing.Point(975, 265);
+            this.txtMaNV.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtMaNV.Name = "txtMaNV";
+            this.txtMaNV.Size = new System.Drawing.Size(171, 31);
+            this.txtMaNV.TabIndex = 12;
+            this.txtMaNV.Tag = "";
+            this.txtMaNV.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // bunifuMetroTextbox5
+            // txtCMND
             // 
-            this.bunifuMetroTextbox5.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.bunifuMetroTextbox5.BorderColorFocused = System.Drawing.Color.SlateGray;
-            this.bunifuMetroTextbox5.BorderColorIdle = System.Drawing.Color.White;
-            this.bunifuMetroTextbox5.BorderColorMouseHover = System.Drawing.Color.SlateGray;
-            this.bunifuMetroTextbox5.BorderThickness = 2;
-            this.bunifuMetroTextbox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox5.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox5.isPassword = false;
-            this.bunifuMetroTextbox5.Location = new System.Drawing.Point(407, 310);
-            this.bunifuMetroTextbox5.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuMetroTextbox5.Name = "bunifuMetroTextbox5";
-            this.bunifuMetroTextbox5.Size = new System.Drawing.Size(211, 31);
-            this.bunifuMetroTextbox5.TabIndex = 25;
-            this.bunifuMetroTextbox5.Tag = "";
-            this.bunifuMetroTextbox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtCMND.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtCMND.BorderColorFocused = System.Drawing.Color.SlateGray;
+            this.txtCMND.BorderColorIdle = System.Drawing.Color.White;
+            this.txtCMND.BorderColorMouseHover = System.Drawing.Color.SlateGray;
+            this.txtCMND.BorderThickness = 2;
+            this.txtCMND.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCMND.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCMND.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtCMND.isPassword = false;
+            this.txtCMND.Location = new System.Drawing.Point(407, 310);
+            this.txtCMND.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtCMND.Name = "txtCMND";
+            this.txtCMND.Size = new System.Drawing.Size(211, 31);
+            this.txtCMND.TabIndex = 5;
+            this.txtCMND.Tag = "";
+            this.txtCMND.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // metroDateTime1
+            // DatetimeNSinh
             // 
-            this.metroDateTime1.CalendarForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.metroDateTime1.CalendarMonthBackground = System.Drawing.SystemColors.HotTrack;
-            this.metroDateTime1.Location = new System.Drawing.Point(407, 351);
-            this.metroDateTime1.Margin = new System.Windows.Forms.Padding(4);
-            this.metroDateTime1.MinimumSize = new System.Drawing.Size(0, 30);
-            this.metroDateTime1.Name = "metroDateTime1";
-            this.metroDateTime1.Size = new System.Drawing.Size(356, 30);
-            this.metroDateTime1.TabIndex = 24;
+            this.DatetimeNSinh.CalendarForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.DatetimeNSinh.CalendarMonthBackground = System.Drawing.SystemColors.HotTrack;
+            this.DatetimeNSinh.Location = new System.Drawing.Point(407, 351);
+            this.DatetimeNSinh.Margin = new System.Windows.Forms.Padding(4);
+            this.DatetimeNSinh.MinimumSize = new System.Drawing.Size(0, 30);
+            this.DatetimeNSinh.Name = "DatetimeNSinh";
+            this.DatetimeNSinh.Size = new System.Drawing.Size(356, 30);
+            this.DatetimeNSinh.TabIndex = 6;
             // 
-            // bunifuMetroTextbox4
+            // txtDienThoai
             // 
-            this.bunifuMetroTextbox4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.bunifuMetroTextbox4.BorderColorFocused = System.Drawing.Color.SlateGray;
-            this.bunifuMetroTextbox4.BorderColorIdle = System.Drawing.Color.White;
-            this.bunifuMetroTextbox4.BorderColorMouseHover = System.Drawing.Color.SlateGray;
-            this.bunifuMetroTextbox4.BorderThickness = 2;
-            this.bunifuMetroTextbox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox4.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox4.isPassword = false;
-            this.bunifuMetroTextbox4.Location = new System.Drawing.Point(407, 266);
-            this.bunifuMetroTextbox4.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuMetroTextbox4.Name = "bunifuMetroTextbox4";
-            this.bunifuMetroTextbox4.Size = new System.Drawing.Size(211, 31);
-            this.bunifuMetroTextbox4.TabIndex = 23;
-            this.bunifuMetroTextbox4.Tag = "";
-            this.bunifuMetroTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDienThoai.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtDienThoai.BorderColorFocused = System.Drawing.Color.SlateGray;
+            this.txtDienThoai.BorderColorIdle = System.Drawing.Color.White;
+            this.txtDienThoai.BorderColorMouseHover = System.Drawing.Color.SlateGray;
+            this.txtDienThoai.BorderThickness = 2;
+            this.txtDienThoai.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDienThoai.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDienThoai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDienThoai.isPassword = false;
+            this.txtDienThoai.Location = new System.Drawing.Point(407, 266);
+            this.txtDienThoai.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtDienThoai.Name = "txtDienThoai";
+            this.txtDienThoai.Size = new System.Drawing.Size(211, 31);
+            this.txtDienThoai.TabIndex = 4;
+            this.txtDienThoai.Tag = "";
+            this.txtDienThoai.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // bunifuMetroTextbox3
+            // txtDiachi
             // 
-            this.bunifuMetroTextbox3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.bunifuMetroTextbox3.BorderColorFocused = System.Drawing.Color.SlateGray;
-            this.bunifuMetroTextbox3.BorderColorIdle = System.Drawing.Color.White;
-            this.bunifuMetroTextbox3.BorderColorMouseHover = System.Drawing.Color.SlateGray;
-            this.bunifuMetroTextbox3.BorderThickness = 2;
-            this.bunifuMetroTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox3.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox3.isPassword = false;
-            this.bunifuMetroTextbox3.Location = new System.Drawing.Point(407, 212);
-            this.bunifuMetroTextbox3.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuMetroTextbox3.Name = "bunifuMetroTextbox3";
-            this.bunifuMetroTextbox3.Size = new System.Drawing.Size(357, 31);
-            this.bunifuMetroTextbox3.TabIndex = 22;
-            this.bunifuMetroTextbox3.Tag = "";
-            this.bunifuMetroTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDiachi.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtDiachi.BorderColorFocused = System.Drawing.Color.SlateGray;
+            this.txtDiachi.BorderColorIdle = System.Drawing.Color.White;
+            this.txtDiachi.BorderColorMouseHover = System.Drawing.Color.SlateGray;
+            this.txtDiachi.BorderThickness = 2;
+            this.txtDiachi.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDiachi.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDiachi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDiachi.isPassword = false;
+            this.txtDiachi.Location = new System.Drawing.Point(407, 212);
+            this.txtDiachi.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtDiachi.Name = "txtDiachi";
+            this.txtDiachi.Size = new System.Drawing.Size(357, 31);
+            this.txtDiachi.TabIndex = 3;
+            this.txtDiachi.Tag = "";
+            this.txtDiachi.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // bunifuMetroTextbox2
+            // txtEmail
             // 
-            this.bunifuMetroTextbox2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.bunifuMetroTextbox2.BorderColorFocused = System.Drawing.Color.SlateGray;
-            this.bunifuMetroTextbox2.BorderColorIdle = System.Drawing.Color.White;
-            this.bunifuMetroTextbox2.BorderColorMouseHover = System.Drawing.Color.SlateGray;
-            this.bunifuMetroTextbox2.BorderThickness = 2;
-            this.bunifuMetroTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox2.isPassword = false;
-            this.bunifuMetroTextbox2.Location = new System.Drawing.Point(407, 166);
-            this.bunifuMetroTextbox2.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuMetroTextbox2.Name = "bunifuMetroTextbox2";
-            this.bunifuMetroTextbox2.Size = new System.Drawing.Size(357, 31);
-            this.bunifuMetroTextbox2.TabIndex = 21;
-            this.bunifuMetroTextbox2.Tag = "";
-            this.bunifuMetroTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtEmail.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtEmail.BorderColorFocused = System.Drawing.Color.SlateGray;
+            this.txtEmail.BorderColorIdle = System.Drawing.Color.White;
+            this.txtEmail.BorderColorMouseHover = System.Drawing.Color.SlateGray;
+            this.txtEmail.BorderThickness = 2;
+            this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtEmail.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtEmail.isPassword = false;
+            this.txtEmail.Location = new System.Drawing.Point(407, 166);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(357, 31);
+            this.txtEmail.TabIndex = 2;
+            this.txtEmail.Tag = "";
+            this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // bunifuMetroTextbox1
+            // txtHoten
             // 
-            this.bunifuMetroTextbox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.bunifuMetroTextbox1.BorderColorFocused = System.Drawing.Color.SlateGray;
-            this.bunifuMetroTextbox1.BorderColorIdle = System.Drawing.Color.White;
-            this.bunifuMetroTextbox1.BorderColorMouseHover = System.Drawing.Color.SlateGray;
-            this.bunifuMetroTextbox1.BorderThickness = 2;
-            this.bunifuMetroTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox1.isPassword = false;
-            this.bunifuMetroTextbox1.Location = new System.Drawing.Point(407, 113);
-            this.bunifuMetroTextbox1.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuMetroTextbox1.Name = "bunifuMetroTextbox1";
-            this.bunifuMetroTextbox1.Size = new System.Drawing.Size(357, 31);
-            this.bunifuMetroTextbox1.TabIndex = 20;
-            this.bunifuMetroTextbox1.Tag = "";
-            this.bunifuMetroTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtHoten.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtHoten.BorderColorFocused = System.Drawing.Color.SlateGray;
+            this.txtHoten.BorderColorIdle = System.Drawing.Color.White;
+            this.txtHoten.BorderColorMouseHover = System.Drawing.Color.SlateGray;
+            this.txtHoten.BorderThickness = 2;
+            this.txtHoten.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtHoten.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHoten.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtHoten.isPassword = false;
+            this.txtHoten.Location = new System.Drawing.Point(407, 113);
+            this.txtHoten.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtHoten.Name = "txtHoten";
+            this.txtHoten.Size = new System.Drawing.Size(357, 31);
+            this.txtHoten.TabIndex = 1;
+            this.txtHoten.Tag = "";
+            this.txtHoten.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // iconPictureBox1
             // 
@@ -792,7 +780,7 @@
         private MetroFramework.Controls.MetroTextBox metroTextBox1;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox1;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtHoten;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel14;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel12;
@@ -805,24 +793,22 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
-        private MetroFramework.Controls.MetroDateTime metroDateTime1;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox4;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox3;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox2;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox5;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox8;
+        private MetroFramework.Controls.MetroDateTime DatetimeNSinh;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtDienThoai;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtDiachi;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtEmail;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtCMND;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtMaNV;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel16;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel15;
-        private Bunifu.Framework.UI.BunifuCheckbox bunifuCheckbox2;
-        private Bunifu.Framework.UI.BunifuCheckbox bunifuCheckbox1;
-        private Bunifu.Framework.UI.BunifuiOSSwitch bunifuiOSSwitch1;
-        private MetroFramework.Controls.MetroComboBox metroComboBox2;
-        private MetroFramework.Controls.MetroComboBox metroComboBox1;
-        private MetroFramework.Controls.MetroComboBox metroComboBox3;
+        private Bunifu.Framework.UI.BunifuCheckbox CheckboxNu;
+        private Bunifu.Framework.UI.BunifuCheckbox CheckboxNam;
+        private Bunifu.Framework.UI.BunifuiOSSwitch SwitchTTHonNhan;
+        private MetroFramework.Controls.MetroComboBox CbCMaPB;
+        private MetroFramework.Controls.MetroComboBox CbBChucVu;
+        private MetroFramework.Controls.MetroComboBox CbBHSLuong;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel17;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel13;
-        private MetroFramework.Controls.MetroDateTime metroDateTime2;
-        private MetroFramework.Controls.MetroComboBox metroComboBox4;
+        private MetroFramework.Controls.MetroComboBox CbBTDHVan;
     }
 }

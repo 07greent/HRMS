@@ -12,7 +12,7 @@ namespace HRMS.BUS
 {
     class BUSChucVu
     {
-<<<<<<< HEAD
+//<<<<<<< HEAD
         //DAOChucVu daoChucVu = new DAOChucVu();
 
         //public DataTable getChucVu()
@@ -50,7 +50,7 @@ namespace HRMS.BUS
         //{
         //    return daoChucVu.CtChucVu(MaCV);
         //}
-=======
+//=======
         DAOChucVu daoChucVu = new DAOChucVu();
 
         public DataTable getChucVu()
@@ -91,7 +91,7 @@ namespace HRMS.BUS
         {
             return daoChucVu.CtChucVu(MaCV);
         }
->>>>>>> 387e7c3c752ee2f441329f5a971169d9ab7f2e9f
+//>>>>>>> 387e7c3c752ee2f441329f5a971169d9ab7f2e9f
     }
 }
 
